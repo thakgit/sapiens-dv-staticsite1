@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Content Model: Browser applies behaviours to elements n nesting elements
+(what is allowed to be nested where)
+Before HTML5: 2 Traditional model
+    Block Level Elements: (Flow Content Model - HTML5 almost similar)
+     - Render to begin on a new line (By Default - you can control with CSS)
+     - May contain inline or other block-level elements within the
+    Inline Elements: (Phrasing model of HTML 5  - almost similar)
+      - Render on the same line by default (CSS can control)
+      - Can contain other inline element (Not Block-level element)
+
+HTML5: 7 content model: (We still care above as they alligns well with existing CSS Rules)
+https://majadc.com/html-content-models
+-->
+<html>
+   <Head>
+       <meta charset="utf-8">
+       <title>Div and Span Element Test</title>
+   </Head> 
+   <body>
+       <div>***DIV - A  : Grade Division ***</div>
+       <!--Division - Generic Block Level Element-->
+       <div>***DIV - B : Class Division***
+           <!-- this is pushing SPAN in new line-->
+       </div>
+       <span>*** SPAN : A : After Class Division***</span>
+       <!-- Span Super Generic inline element-->
+       <div>
+           **** DIV - C : Just After SPAN - A 
+           <!-- this is pushing SPAN in new line-->
+           <span>*** SPAN - B: Inside DIV - C**</span>
+           Continue content of DIV - C ***
+       </div>
+       <!-- Try removing all new line put everythign in one line it will still remain same in HTML page
+        Try Adding DIV inside Span and validate with W3 - it's not valid
+        -->
+   </body>
+</html>
+<!-- https://html.spec.whatwg.org/multipage/-->
