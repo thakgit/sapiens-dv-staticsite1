@@ -1,0 +1,6 @@
+/*
+1. Combining css Selectors
+  a. Element with Class Seelctor (p.highlight not all p are affected )
+  b. Child Selector selector1 > selector2 ( article > p {} Every p that is child of article is affected)
+  c. Descendant Selector - > article p {} Every p that is inside at any level to article is affected.
+*/
