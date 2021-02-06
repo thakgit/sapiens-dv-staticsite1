@@ -4,6 +4,12 @@
   b. Child Selector selector1 > selector2 ( article > p {} Every p that is direct child of article is affected)
   c. Descendant Selector - > article p {} Every p that is inside at any level to article is affected.
   d. Beyond Element Selector - combining is also applied to class
+  c. Pseudo-class selectors: (selector:psuedo-class) - change based on user action or selection (Unordered list as menu-all recipies on the top-home)
+     :link
+     :visited
+     :hover
+     :active
+     :nth-child()
 */
 
 /*a*/
