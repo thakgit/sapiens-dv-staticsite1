@@ -1,6 +1,77 @@
 /*
 1. Combining css Selectors
-  a. Element with Class Seelctor (p.highlight not all p are affected )
-  b. Child Selector selector1 > selector2 ( article > p {} Every p that is child of article is affected)
+  a. Element with Class Seelctor (p.highlight not all p are affected )  - target specific DOM element
+  b. Child Selector selector1 > selector2 ( article > p {} Every p that is direct child of article is affected)
   c. Descendant Selector - > article p {} Every p that is inside at any level to article is affected.
+  d. Beyond Element Selector - combining is also applied to class
+  e. Pseudo-class selectors: (selector:psuedo-class) - change based on user action or selection (Unordered list as menu-all recipies on the top-home)
+     :link
+     :visited
+     :hover
+     :active
+     :nth-child()
 */
+
+/*a*/
+/* Apply to P */
+p.highlight {
+  color: pink;
+  background-color: black;
+  
+}
+/*apply to div */
+highlight {
+  color: pink;
+  font-size: 18px;
+  width: 100px;
+  background-color: black;
+}
+
+/*b*/
+/*
+<article> <p>.. </p> </article> (blue)
+<p>..</p> (not affected)
+<article> <div> <p>..</p> </div> </article> (not affected)
+*/
+article > p {
+  color: blue;
+}
+/*c*/
+/*
+<article> <p>.. </p> </article> (blue)
+<p>..</p> (not affected)
+<article> <div> <p>..</p> </div> </article> (blue)
+*/
+article p {
+  color: blue;
+}
+
+/*d*/
+.colored p { /* Every P that is inside at any level with class="colored" */
+  color: blue;
+}
+article > .colored {  /* Every element with class=".colored" that isa direct child of article element */
+  color: blue;
+}
+
+/*e*/
+/* Express link as state */
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_border-style*/
+header li {
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none; /* remove underline */
+  background-color: blue;
+  border: 1px solid blue;
+  color: black;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+
+}
+a:hover, a:active{
+  background-color: red;
+  color: purple;
+}
