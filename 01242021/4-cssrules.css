@@ -1,6 +1,49 @@
 /*
 1. Combining css Selectors
-  a. Element with Class Seelctor (p.highlight not all p are affected )
-  b. Child Selector selector1 > selector2 ( article > p {} Every p that is child of article is affected)
+  a. Element with Class Seelctor (p.highlight not all p are affected )  - target specific DOM element
+  b. Child Selector selector1 > selector2 ( article > p {} Every p that is direct child of article is affected)
   c. Descendant Selector - > article p {} Every p that is inside at any level to article is affected.
+  d. Beyond Element Selector - combining is also applied to class
 */
+
+/*a*/
+/* Apply to P */
+p.highlight {
+  color: pink;
+  background-color: black;
+  
+}
+/*apply to div */
+highlight {
+  color: pink;
+  font-size: 18px;
+  width: 100px;
+  background-color: black;
+}
+
+/*b*/
+/*
+<article> <p>.. </p> </article> (blue)
+<p>..</p> (not affected)
+<article> <div> <p>..</p> </div> </article> (not affected)
+*/
+article > p {
+  color: blue;
+}
+/*c*/
+/*
+<article> <p>.. </p> </article> (blue)
+<p>..</p> (not affected)
+<article> <div> <p>..</p> </div> </article> (blue)
+*/
+article p {
+  color: blue;
+}
+
+/*d*/
+.colored p { /* Every P that is inside at any level with class="colored" */
+  color: blue;
+}
+article > .colored {  /* Every element with class=".colored" that isa direct child of article element */
+  color: blue;
+}
