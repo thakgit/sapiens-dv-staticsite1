@@ -4,7 +4,7 @@
   b. Child Selector selector1 > selector2 ( article > p {} Every p that is direct child of article is affected)
   c. Descendant Selector - > article p {} Every p that is inside at any level to article is affected.
   d. Beyond Element Selector - combining is also applied to class
-  c. Pseudo-class selectors: (selector:psuedo-class) - change based on user action or selection (Unordered list as menu-all recipies on the top-home)
+  e. Pseudo-class selectors: (selector:psuedo-class) - change based on user action or selection (Unordered list as menu-all recipies on the top-home)
      :link
      :visited
      :hover
@@ -52,4 +52,25 @@ article p {
 }
 article > .colored {  /* Every element with class=".colored" that isa direct child of article element */
   color: blue;
+}
+
+/*e*/
+/* Express link as state */
+header li {
+  list-style: none;
+}
+a:link, a:visited {
+  text-decoration: none; /* remove underline */
+  background-color: blue;
+  border: 1px solid blue;
+  color: black;
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 1px;
+
+}
+a:hover, a:active{
+  background-color: red;
+  color: purple;
 }
