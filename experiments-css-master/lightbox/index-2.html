@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>LIGHTBOX EXAMPLE</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<style>
+		#lightbox {
+		    display: none;
+	    	background: rgba(0, 0, 0, 0.498039);
+	        position: fixed;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    z-index: 2147483647;
+		    text-align: center;
+		}
+
+		/* white-box */
+		#lightbox-content {
+		    position: relative;
+		    text-align: left;
+		    vertical-align: middle;
+		    display: inline-block;
+		    overflow: auto;
+		    margin: 2% 5% 2% 5%;
+		    max-height: 95%;
+		    background: #fff;
+		    cursor: auto;
+		    white-space: normal;
+		    -webkit-box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+    		OVERFLOW-Y: scroll;
+		}
+
+		@media (max-width: 1024px) {
+			#lightbox-content {
+			    margin: 1% 0;
+			    max-height: 98%;
+			    border-bottom: 10px solid transparent;
+			}
+		}
+
+		@media (min-width: 768px) {
+			#lightbox-content {
+			    max-width: 50%;
+			}
+		}
+
+		/* CLOSE button */
+		#lightbox-content button {
+			float: right;
+			border: 0;
+			background-color: white;
+			padding: 5px;
+		}
+
+		/* content in white-box */
+		#white-content {
+			padding: 25px;
+		}
+	</style>
+	</head>
+	<body>
+		<p>
+			This is the main content. To display a lightbox click 
+			<a href = "javascript:void(0)" onclick = "document.getElementById('lightbox').style.display='block'">
+				here
+			</a>
+			<!-- To simulate a long page -->
+			<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		</p>
+
+		<div id="lightbox" class="">
+			<div id="lightbox-content">
+				<!-- Close button -->
+				<button class="" onclick = "document.getElementById('lightbox').style.display='none'">X</button>
+				<!-- white-content -->
+				<div id="white-content">
+					This is the lightbox content. 
+					<!-- To simulate a long content inside ligthbox -->
+					This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. This is the lightbox content. 
+					<!-- To simulate a long content inside ligthbox -->
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

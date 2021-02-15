@@ -75,3 +75,13 @@ a:hover, a:active{
   background-color: red;
   color: purple;
 }
+header li:nth-child(3) {
+  font-size: large;
+}
+section div:nth-child(odd){
+  background-color: purple;
+}
+section div:nth-child(4):hover {
+  background-color: greenyellow;
+  cursor: pointer;
+}
