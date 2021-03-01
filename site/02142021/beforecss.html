@@ -6,17 +6,85 @@
     SPA can use this efficiently
 -->
 <html>
+    
+    <style type="text/css">
+     section li{
+     list-style: none;
+     }
+     section li:nth-child(odd) {
+         font-size: 24px;
+     }
+     
+     a:link, a:visited {
+         text-decoration: none; 
+         background-color: lawngreen;
+         border: 1px solid blue;
+         color: black;
+         display: block;
+         width: 150px;
+         text-align: center;
+         margin-bottom: 1px;
+    }
+    a:hover, a:active {
+     background-color: red;
+     color: purple;
+    }
+    table tr:nth-child(odd) {
+     background-color: lightcoral;
+     cursor: pointer;
+    }
+    table tr:nth-child(1) {
+     background-color: red;
+     cursor: pointer;
+    }
+    table tr:nth-child(odd):hover {
+     background-color: red;
+     cursor: pointer;
+    }
+    </style>
     <head>
 
     </head>
     <body>
         <h1 id="top">Single Page for our Recipe - Top</h1>
-        
+        <table >
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th> 
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Siri</td>
+              <td>G</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Shail</td>
+              <td>N</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Aanya</td>
+              <td>S</td>
+              <td>80</td>
+            </tr>
+            <tr>
+                <td>Tanishi</td>
+                <td>T</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Garagie</td>
+                <td>S</td>
+                <td>80</td>
+              </tr>         
+          </table>
+          <!--
         <section>
             <ul>
                 <li>
                     <a href="#namakpara" >
-                    Namak Para
+                    Namak Para 
                     </a>
                 </li>
                 <li>
@@ -64,5 +132,6 @@
                 Back to My Recipe Titles: <a href="#top"> Go Back to Top Title</a>
             </p>
         </div>
+    -->
     </body>
 </html>

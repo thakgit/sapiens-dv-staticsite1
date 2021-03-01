@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <!--
+1. Comments
+2. Image- explain img is inline, why width and height is helpful, explain external link. (Reserve the space controlled by width n height)
+3. Install Chrome extension and demo for visually impaired - alt tag
 
-    3. Fragement identifier - section
-    Send only section as a bookbmark
-    SPA can use this efficiently
 -->
 <style type="text/css">
- section li{
-     list-style: none;
- }
- a:link, a:visited {
-    text-decoration: none; 
-    background-color: green;
-    border: 1px solid blue;
-    color: black;
-    display: block;
-    width: 150px;
-    text-align: center;
-    margin-bottom: 1px;
- }
- a:hover, a:active {
-     background-color: red;
-     color: purple;
- }
- /**
- section li:nth-child(3) {
-     font-size: 24px;
- } 
- section li:nth-child(odd) {
-     background-color: gray;
- }
- **/
- section li:nth-child(4):hover {
-     background-color: rebeccapurple;
-     cursor: pointer;
- }
+    /*a*/
+/* Apply to P */
+p.highlight {
+  color: red;
+  background-color: black;
+  
+}
+/*apply to div */
+.highlight {
+  color: pink;
+  font-size: 18px;
+  width: 100px;
+  background-color: black;
+}
+
+article  div {
+  color: blue;
+  background-color: rgb(124, 95, 95);
+  width: 180px;
+  font-size: large;
+}
 </style>
 <html>
     <head>
 
     </head>
     <body>
-        <h1 id="top">Single Page for our Recipe - Top</h1>
-        
-        <section>
+        <h1 id="top">Single Page for our Recipe With Image - Top</h1>
+        <p>This is top level P</p>
+        <article>
+            <p> I am interested into:</p>
+            <section>
+                Sections I love
+                <p>Math</p>
+                <p>History</p>
+                <div>
+                    This is DIV
+                    <p>My Hobbies</p>
+                </div>
+            </secion>
+        </article>
+        <article>
+           <div class="colored"> <p> This is Article Child sample example P under Div</p></div>
+        </article>
+        <section class="colored">
             <ul>
                 <li>
                     <a href="#namakpara" >
@@ -62,44 +69,23 @@
                 </li>                                
             </ul>
         </section>
-        
-<table style="width:100%">
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th> 
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>80</td>
-    </tr>
-  </table>
         <section id="namakpara">
-            <h3>Namak Para - The perfect snack for your evening tea </h3>
-            <p>
+            <h3 class="highlight">Namak Para - The perfect snack for your evening tea </h3>
+            <img src="Nimki.jpg" alt="This is picture of Namakin" width="680" height="450">
+            
                 Move aside pretzels. We have our own desi version that tastes way better. Follow our recipe to make the crunchiest, yummiest namak paras. Find a window seat, make a hot cup of tea, and take a handful of these namak paras to elevate the snacking experience. Make it for Diwali and Holi, add it to your chaats, or just munch away. These will find a way to your plate however you want.
-            </p>
-            <p><strong>Ingredients:</strong></p>
+            
+            <p class="highlight"><strong>Ingredients:</strong></p>
             <ul><li>Maida/all purpose flour &#8211; 2 cups</li><li>Oil &#8211; 4 tbsp</li><li>Ajwain(onion seeds) &#8211; 1 tsp</li><li>Dried Kasuri methi &#8211; 1 tsp</li><li>Kalonji (caraway seeds) &#8211; 1 tsp</li><li>Water &#8211; 1/2 cup</li><li>Salt to taste</li><li>Oil for frying</li></ul>
             <p><strong>Steps:</strong></p>
-            <ol><li>Take maida in a bowl and add oil to it. </li><li>Rub maida and oil together until they start binding together. To check if your maida is mixed well, pick a handful of maida and make a fist. If the maida forma a ball/stays together and does not crumble, then you have enough oil for your namak para in the maida to make it crunchy.</li><li>Now add salt, crushed kasuri methi, ajwain (caraway seeds) and kalonji (onion seeds) and mix well.</li><li>Add water gradually and form a smooth, tight dough. It is important that you knead the dough well for about 4-5 mins.</li><li>Cover the dough with a damp cloth and let it rest for 15 mins.</li><li>After 15 mins, take a small ball of the dough and roll it like chapatis. The thickness should be appx. double that of chapati.</li><li>Cut the rolled dough into strips horizontally and then cut across the strips to get small rectangles of namak paras.</li><li>Heat oil on medium heat, drop a small batch of namak paras, and fry until they turn golden. This takes around 5-6 mins.</li><li>Let them cool down a little. They might feel a little soft right off the oil but will turn crunchy once they cool down.</li><li>Enjoy the namak paras with tea, coffee, or as is. You can also use them in place of papri in papri chaat.</li></ol>
+            <ol class="highlight"><li>Take maida in a bowl and add oil to it. </li><li>Rub maida and oil together until they start binding together. To check if your maida is mixed well, pick a handful of maida and make a fist. If the maida forma a ball/stays together and does not crumble, then you have enough oil for your namak para in the maida to make it crunchy.</li><li>Now add salt, crushed kasuri methi, ajwain (caraway seeds) and kalonji (onion seeds) and mix well.</li><li>Add water gradually and form a smooth, tight dough. It is important that you knead the dough well for about 4-5 mins.</li><li>Cover the dough with a damp cloth and let it rest for 15 mins.</li><li>After 15 mins, take a small ball of the dough and roll it like chapatis. The thickness should be appx. double that of chapati.</li><li>Cut the rolled dough into strips horizontally and then cut across the strips to get small rectangles of namak paras.</li><li>Heat oil on medium heat, drop a small batch of namak paras, and fry until they turn golden. This takes around 5-6 mins.</li><li>Let them cool down a little. They might feel a little soft right off the oil but will turn crunchy once they cool down.</li><li>Enjoy the namak paras with tea, coffee, or as is. You can also use them in place of papri in papri chaat.</li></ol>
 
         </section>
         <section id="cheesespread">
             <h3>Cheese Spread - simple and delicious spread for crackers , chips and sandwiches
 
             </h3>
+            <img src="https://i1.wp.com/kitchenandjjkurries.com/wp-content/uploads/2020/12/Cheese-spread.jpg?fit=%2C&ssl=1" width="680" height="450" >
             <p>
                 Glam up your next party with this yummy cheese spread that is simple and easy to make. It’s so addictive that you will find yourself using it on everything you eat!!!
 
@@ -112,9 +98,9 @@
         </section>
         <div>
             <h2>
-                <a name="cheesypasta">Cheesy Pasta</a>
+                <a name="cheesypasta" title="Cheesy Pasta">Cheesy Pasta</a>
             </h2>
-            <p>
+            <p class="highlight">
                 Back to My Recipe Titles: <a href="#top"> Go Back to Top Title</a>
             </p>
         </div>
