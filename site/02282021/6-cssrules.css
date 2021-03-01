@@ -1,0 +1,36 @@
+/*
+Style Placement
+1. <style> </style>
+2. <p style="text-align: center;"> I am Centered!</p> - Inline is least preferred, use only for quick testing,
+3. External style <link rel="stylesheet" href="_style.css"> //Same directory as html
+
+Conflict Resolution:
+Cascade - and resolve conflict:
+Algorithm for cascading
+1. Origin - last declaration wins - simple rule, have p applied 3 style ( css file, styles element and inlineelement to showcase merge)
+2. Merge
+3. Inheritance -> DOM Tree body tag - child and child of it will inherit
+4. Specificity -> simple rule - most specific selector combination wins
+a, styles, b. ID, c. class, pseudo-class, attribute, d. # of elements (div p {} -  0 0  0 2
+div #myId {
+    color: blue;
+}
+0101
+div.big p {
+    color:green;
+}
+0012
+
+Styling a Text:
+Style the paragraph to see comparition:
+1. font-family - combinaion of fonts serif css_websafe_fonts.asp ( w3 school)
+2. color- hex value preferred - 00 red, 00-green, 00-blue
+3. font-style - italic or normal
+4. font-weight - normal, bold, number
+5. font-size - pix
+6. text-transform: capitalize, lower case etc
+7. text-align 
+8. font-size in % (16px default)
+
+The Box Model
+*/
